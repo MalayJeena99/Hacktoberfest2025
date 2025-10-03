@@ -1,0 +1,25 @@
+// copy and paste problem in java
+// contributor - malay999
+
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+public class copyPaste {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while (t-->0){
+            int n = sc.nextInt();
+            int[] inputArr = new int[n];
+            for (int i = 0; i < n; i++) {
+                inputArr[i] = sc.nextInt();
+            }
+            Set<Integer> finalArr = new HashSet<>();
+            for (int i = 0; i < n; i++) {
+                finalArr.add(inputArr[i]);
+            }
+            System.out.println(finalArr.size());
+        }
+    }
+}
